@@ -17,7 +17,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{secrets.EC2_SSH_KEY}}
         ARGS: "-rltgoDzvO --delete"
         SOURCE: "./"
-        REMOTE_HOST: "burnunssi.ddns.net"
+        REMOTE_HOST: "ec2-54-165-62-56.compute-1.amazonaws.com"
         REMOTE_USER: "ubuntu"
         TARGET: "/var/www/html/example-app/"
         EXCLUDE: "/dist/, /vendor/, /node_modules/, **.env"
